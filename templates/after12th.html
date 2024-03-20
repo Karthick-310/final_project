@@ -1,0 +1,514 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Career by karthi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+     <!-- CSS here -->
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/slicknav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/flaticon.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/progressbar_barfiller.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/gijgo.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/animate.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/animated-headline.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/fontawesome-all.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/themify-icons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/slick.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/nice-select.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='index/css/popup.css') }}">
+<link rel="shortcut icon" type="static/index/image/x-icon" href="static/index/img/favicon.ico">
+
+</head>
+
+<body>
+    <!-- ? Preloader Start  -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{ url_for('static', filename='index/img/logo/loder.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a ><img src="{{ url_for('static', filename='index/img/logo/logo.png') }}" alt=""> </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="/index">Home</a></li>
+                                                <li><a >Services</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="/career_pred">Career Prediction</a></li>
+                                                        <!-- <li><a href="/12th">12th After </a></li> -->
+                                                        <li><a href="/psycho-metric-test">Psychometric Test</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="/courses">Courses</a></li>
+                                                <li><a href="#">About</a></li>
+                                               
+                                                <!-- <li><a href="contact.html">Contact</a></li> -->
+                                                <!-- Button -->
+                                                <li class="button-header"><a href="/logout" class="btn btn3">Log Out</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <section class="slider-area slider-area2">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-11 col-md-12">
+                                <div class="hero__caption hero__caption2">
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">Select Your 12th Stream</h1>
+                                    <!-- breadcrumb Start-->
+                                    <!-- <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="#">Services</a></li> 
+                                        </ol>
+                                    </nav> -->
+                                    <!-- breadcrumb End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
+        <!-- top subjects start --> 
+        <div class="topic-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-25 mt-25">
+                            <h2>Explore Streams</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic1.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Agriculture</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img" id="popup-btn-biology">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic2.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content" >
+                                        <h3><a>Biology</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img" id="popup-btn-science">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic3.png') }}" alt="">
+
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a>Science</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic4.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Paramedical</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img" id="popup-btn-arts">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic5.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a >Arts</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img" id="popup-btn-commerce">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic6.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a>Commerce</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic7.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Travel and tourism</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic8.png') }}" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Programing</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="{{ url_for('static', filename='index/img/gallery/topic3.png') }}" alt="">
+
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Science</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>s
+                    </div>
+                </div> -->
+
+                <!-- <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="courses.html" class="border-btn">View More Subjects</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="courses.html" class="border-btn">View More Subjects</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- top subjects End -->  
+
+    </main>
+    <!-- popup content -->
+    <div id="popup-biology" class="popup-container">
+        <div class="popup-content">
+          <span id="close-biology">&times;</span>
+          <h3>With PCMB(Physics, Chemistry, Maths, Biology )</h3>
+          <ul class="bullet">
+            <li>B.Sc. in Dairy Technology (4yrs.)</li>
+            <ul>
+                <li>M.B.A. (2yrs.)</li>
+            </ul>
+            <li>Bachelor of Pharmacy (3yrs)</li>
+            <ul>
+                <li>M.B.A. (2yrs.)</li>
+                <li>Master in Pharmacy (2yrs.)</li>
+            </ul>
+            <li>B.Tech. in Agriculture (4yrs.)</li>
+            <ul>
+                <li>M.B.A. (2yrs.)</li>
+                <li>M.Tech. in Agriculture (2yrs.)</li>  
+            </ul>
+            <li>B.Sc. Bio-Technology (4yrs.)</li>
+            <ul>
+                <li>M.B.A. (2yrs.)</li>
+                <li>M.Sc. Bio-Technology (2yrs.)</li>
+            </ul>
+            <li>B.Sc. in Agriculture (4yrs.)</li>
+            <ul>
+                <li>M.B.A. (2yrs.)</li>
+                <li>M.Sc. Animal Husbandry Dairy Technology (2yrs.)</li>  
+            </ul>
+          </ul>
+            <h3>With PCB(Physics, Chemistry, Biology )</h3>
+            <ul>
+                <li>B.A.M.S. (4& 1/2 yrs.)</li>
+                <ul>
+                    <li>M.D. (2yrs.)</li>
+                </ul>
+                <li>B.H.M.S. (4& 1/2 yrs.)</li>
+                <li>B.V.Sc. (5yrs.)</li>
+                <li>B.D.S. (4yrs.)</li>
+                <ul>
+                    <li>M.D.S. (2yrs.)</li>
+                </ul>
+                <li>M.B.B.S. (4& 1/2 yrs.)</li>
+                <ul>
+                    <li>M.D. (3yrs.)</li>
+                    <li>M.S. (3yrs.)</li>
+                    <li>Special Diploma (2yrs.)</li>
+                </ul>
+                <li>Paramedical Courses (3-4 & 1/2 yrs.)</li>
+                <li>B.Sc. Nursing (3-4yrs.)</li>
+                <li>Diploma in Nursing (2yrs.)</li>
+                <li>B.M.L.T. (3yrs.)</li>
+                <li>B.Sc. Home Science (3yrs.) </li>
+                <li>B.Sc. (Botany, Micro Biology, Zoology, Chemistry etc.)</li>
+                <ul> 
+                    <li>M.Sc (2yrs.)</li>
+                    <li>M.Phil(2yrs.)</li>
+                    
+                    <li>M.Sc (Bio-Technology) (2yrs.)</li>
+                    <li>M.Tech (Bio-Technology) (1yrs.)</li>
+                    <li>Ph.D.</li>
+                </ul>
+            </ul>
+
+        
+        </div>
+    </div>
+<!-- popup content for science -->
+<div id="popup-science" class="popup-container">
+    <div class="popup-content">
+      <span id="close-science">&times;</span>
+      <h3>With PCMB(Physics, Chemistry, Maths)</h3>
+      <ul class="bullet">
+        <li> N.D.A.(3yrs.)</li>
+        <!-- <ul>
+            <li>M.B.A. (2yrs.)</li>
+        </ul> -->
+        <li>B.Arch (5yrs)</li>
+        <ul>
+            <li>Diploma in interior</li>
+            <li>Landscape Design</li>
+        </ul>
+        <li>Bachelor of Planning & Design (5yrs.)</li>
+        <li>B.E. (4yrs.)</li>
+        <ul>
+            <li>Merchant Navy (1yrs.)</li>
+            <li>M.E. (2yrs.)</li>
+            <li>MPSC & UPSC Exam </li>
+            <li>Defence Direct Entry</li>
+            <li>M.S. (foreign University) 2yrs.</li>
+            <li>M.B.A. (2yrs.)</li>
+            <li>M.Tech IIT (2yrs)</li>
+        </ul>
+        <li>B.Tech IIT (4yrs)</li>
+        <li>Direct 2nd year Engineering Diploma (2yrs)</li>
+        <li>B.C.S./B.C.A./B.S.c.(phy) 3yrs</li>
+        <ul>
+            <li>M.C.A. (2yrs)</li>
+            <li>M.C.S./M.C.M./M.B.A. (2yrs)</li>
+        </ul>
+        <li>Hotel Management Degree</li>
+        <li>Film &television Diploma (1-2 yrs)</li>
+      </ul>
+    </div>
+</div>
+<!-- popup content for arts -->
+<div id="popup-arts" class="popup-container">
+    <div class="popup-content">
+      <span id="close-arts">&times;</span>
+        <ul>
+            <li>D.Ed. (2yrs)</li>
+            <li>B.S.w. (3yrs)</li>
+            <ul><li>M.S.W. (2yrs)</li></ul>
+            <li>L.L.B. Foundation (5yrs)</li>
+            <ul>
+                <li>D.T.L. (1yrs)</li>
+                <li>D.L.L (1yrs)</li>
+                <li>L.L.M. (2yrs)</li>
+            </ul>
+            <li>Fashion Designing Diploma (3yrs)</li>
+            <li>Interior Designing Diploma (2yrs)</li>
+            <li>B.A.</li>
+            <ul>
+                <li>B.P.Ed. (1yrs)</li>
+                <ul>
+                    <li>P.T. Teacher</li>
+                </ul>
+                <li>M.A. (2yrs)</li>
+                <li>M.A. in Mass Communication (2yrs)</li>
+                <li>Bachelor of Journalism (1yrs)</li>
+                <li>L.L.b. (3yrs)</li>
+                <ul><li>L.L.M. (2yrs)</li></ul>
+                <li>Bachelor of Library Science (1yrs)</li>
+                <li>M.B.A. (2yrs) </li>
+                <li>Diploma in Dramatisation (3yrs)</li>
+                <li>M.C.A. (3yrs)</li>
+                <li>M.C.M</li>
+                <li>B.Ed.</li>
+                <ul>
+                    <li>M.Ed.</li>
+                </ul>
+                <li>Advertising & Commercial Management Dip</li>
+                <li>Event Management Diploma</li>    
+            </ul>
+            <li>B.B.A. (3yrs)</li>
+            <ul><li>M.B.A (2yrs)</li></ul>
+            <li>Foreign Languages Diploma</li>
+            <li>B.Arch. (12th with Maths, English) (5yrs)</li>
+
+        </ul>
+    </div>
+</div>
+<!-- popup content for commerce -->
+<div id="popup-commerce" class="popup-container">
+    <div class="popup-content">
+      <span id="close-commerce">&times;</span>
+      <ul>
+        <li>C.A. Foundation</li>
+        <li>B.Com.</li>
+        <ul>
+            <li>M.B.A. (Marketing, Finance, Materials ect.) (2yrs)</li>
+            <li>L.L.B. (2yrs)</li>
+            <ul><li>L.L.M. (2yrs)</li></ul>
+            <li>C.A. (2yrs)</li>
+            <li>B.Ed (1yrs)</li>
+            <ul><li>M.Ed</li></ul>
+            <li>I.C.W. (2yrs)</li>
+            <li>Bachelor of Library Science (1yrs)</li>
+            <li>C.S. (2yrs)</li>
+            <li>Import Export Diploma (1yrs)</li>
+            <li>M.C.M. (2yrs)</li>
+            <li>M.C.A. (3yrs)</li> 
+        </ul>
+        <li>B.B.A. (3yrs)</li>
+        <ul><li>M.B.A (2yrs)</li></ul>
+        <li>C.S. Foundation</li>
+        <li>B.C.A. (12th with Maths, English) (3yrs) </li>
+        <li>B.Arch (12th with Maths, English) (5yrs) </li>
+        <li>D.Ed. (2yrs)</li>
+      </ul>
+    </div>
+</div>
+    <footer>
+        <div class="footer-wrappper footer-bg">
+           <!-- Footer Start-->
+
+           <!-- footer-bottom area -->
+           <div class="footer-bottom-area">
+               <div class="container">
+                   <div class="footer-border">
+                       <div class="row d-flex align-items-center">
+                           <div class="col-xl-12 ">
+                               <div class="footer-copy-right text-center">
+                                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+                                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer End-->
+          </div>
+      </footer> 
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+<script src="{{ url_for('static', filename='index/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{{ url_for('static', filename='index/js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/bootstrap.min.js') }}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{{ url_for('static', filename='index/js/jquery.slicknav.min.js') }}"></script>
+
+<!-- Jquery Slick, Owl-Carousel Plugins -->
+<script src="{{ url_for('static', filename='index/js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/slick.min.js') }}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{{ url_for('static', filename='index/js/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/animated.headline.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.magnific-popup.js') }}"></script>
+
+<!-- Date Picker -->
+<script src="{{ url_for('static', filename='index/js/gijgo.min.js') }}"></script>
+<!-- Nice-select, sticky -->
+<script src="{{ url_for('static', filename='index/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.sticky.js') }}"></script>
+<!-- Progress -->
+<script src="{{ url_for('static', filename='index/js/jquery.barfiller.js') }}"></script>
+
+<!-- counter, waypoint, Hover Direction -->
+<script src="{{ url_for('static', filename='index/js/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.countdown.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/hover-direction-snake.min.js') }}"></script>
+
+<!-- contact js -->
+<script src="{{ url_for('static', filename='index/js/contact.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.form.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/mail-script.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/jquery.ajaxchimp.min.js') }}"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script src="{{ url_for('static', filename='index/js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='index/js/popup.js') }}"></script>
+</body>
+</html>

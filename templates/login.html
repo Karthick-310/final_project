@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet" media="all">
+
+
+</head>
+<body>
+  <div class="main_container">
+<div class="pen-title">
+  <h1>Student Login</h1>
+</div>
+<!-- <div class="rerun"><a href="">Rerun Pen</a></div -->
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+
+    <form action="/login" method="POST">
+      {% if username %}
+      <div class="input-container">
+        <input type="text"  name="username" required value="{{ username }}" >
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      {% else %}
+      <div class="input-container">
+        <input type="text"  name="username" >
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      {% endif %}
+      <div class="input-container">
+        <input type="password"  name="password" required>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      {% if msg %}
+      {{msg}}
+      {% endif %}
+      <div class="button-container">
+        <button value="Sign In" ><span>Go</span></button>
+      </div>
+
+      <!-- <div class="footer"><a href="#">Forgot your password?</a></div> -->
+    </form>
+  </div>
+  <div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Register
+      <div class="close"></div>
+    </h1>
+    <form action="/register" method="POST">
+      <div>
+      {% if name %}
+      <div class="input-container">
+        <input type="text" name="name" value="{{name}}" required="required"/>
+        <label for="#{label}">Full Name</label>
+        <div class="bar"> </div>
+      </div>
+        {% else %}
+        <div class="input-container">
+          <input type="text" name="name" >
+          <label for="#{label}">Full Name</label>
+          <div class="bar"></div>
+        </div>
+          {% endif %}
+          {% if username %}
+      
+      <div class="input-container">
+        <input type="text"  name="username" value="{{username}}" required="required"/>
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      {% else %}
+      <div class="input-container">
+        <input type="text"  name="username" >
+        <label for="#{label}">Username</label>
+        <div class="bar"></div>
+      </div>
+      {% endif %}
+      {% if email %}
+      <div class="input-container">
+        <input type="email" name="email" value="{{email}}" required="required"/>
+        <label for="#{label}">Email</label>
+        <div class="bar"></div>
+      </div>
+      {% else %}
+      <div class="input-container">
+        <input type="email" name="email" >
+        <label for="#{label}">Email Id</label>
+        <div class="bar"></div>
+      </div>
+      {% endif %}
+      <div class="input-container">
+        <input type="password" name="password" required="required"/>
+        <label for="#{label}">Password</label>
+        <div class="bar"></div>
+      </div>
+      {% if msg %}
+      {{ msg }}
+      {% endif %}
+      <div class="button-container">
+        <button value="Sign Up"><span>Submit</span></button>
+      </div>
+      </div>
+      
+    </form>
+  </div>
+</div>
+</div>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+    $('.toggle').on('click', function() {
+  $('.container').stop().addClass('active');
+});
+
+$('.close').on('click', function() {
+  $('.container').stop().removeClass('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo">
+
+    <title>mindHunt 2.0</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='psycho/css/plugins.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='psycho/css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='psycho/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='psycho/css/color-variations/purple.css') }}">
+
+
+
+    <style>
+        .nav-item:hover {
+            background-color: rgba(0, 0, 0, 0.829);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="body-inner">
+
+        <!-- Header (Nav-Bar) -->
+        <nav style="background-color: #384149; padding:20px; margin-bottom:0 !important;"
+            class="mb-4 navbar navbar-expand-lg navbar-dark unique-color-light bg-dark">
+            <a style="font-size: xx-large;" class="navbar-brand" href="#"><span>Career</span></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="/index"><i class="fa fa-check-circle"></i> Home</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 10px;">
+                        <a class="nav-link active" href="#"><i class="fa fa-info-circle"></i> About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/logout"><i class="fa  fa-sign-in" aria-hidden="true"></i> Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <div style="text-align: center; padding:50px ;">
+                <h3>
+                    Psychometric Test
+                </h3>
+                <h5 style="font-size: 18px;">
+                    Result:
+                </h5>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="clearfix hidden-sm-down hidden-lg-up"></div>
+                    <!-- <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">
+                                    Dashboard:</h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Name: {{name}}
+                                </p>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Contact: {{number}}
+                                </p>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">Age: {{age}}
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div class="card shadow p-3 mb-5 bg-white rounded" style="text-align: center; padding:20px;  ">
+                            <div class="card-block">
+                                <h4 class="card-title" style="color: black; font-weight: 50000; font-size: 25px; ">
+                                    RESULT: </h4>
+                                <p class="card-text" style="color: black;font-size: 18px;  ">{{result}}
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
+        <script src="{{ url_for('static', filename='psycho/js/jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='psycho/js/plugins.js') }}"></script>
+        <script src="{{ url_for('static', filename='psycho/js/functions.js') }}"></script>
+        <script src="{{ url_for('static', filename='psycho/js/plugins/components/particles.js') }}"></script>
+        <script src="{{ url_for('static', filename='psycho/js/plugins/components/particles-animation.js') }}"></script>
+
+    </div>
+</body>
+
+</html>
