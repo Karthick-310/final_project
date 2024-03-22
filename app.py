@@ -224,5 +224,5 @@ def test():
         return render_template('psychometric_result.html', result=decision(result))
     form=TestForm()
     return render_template('psychometric_test.html',form=form)
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)

@@ -6,7 +6,7 @@
 # CMD python ./app.py
 
 # Use an existing base image
-FROM python:3.8.0
+FROM python:3.8.18-bullseye
 
 # Set environment variables
 
