@@ -225,4 +225,4 @@ def test():
     form=TestForm()
     return render_template('psychometric_test.html',form=form)
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
