@@ -40,8 +40,11 @@ def career_prediction():
 
 @app.route('/12th')
 def after_12th():
-   return render_template('after12th.html')
-
+   if session['loggedin']:
+    return render_template('after12th.html')
+   else:
+       return f"Please login in"
+       
 @app.route('/login',methods =['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -90,8 +93,10 @@ def register():
 
 @app.route('/courses')
 def courses_view():
-    return render_template('courses.html')
-
+    if session['loggedin']:
+        return render_template('courses.html')
+    else:
+        return f"Please login in"
 @app.route('/blank')
 def blnk():
     return render_template('blank_page.html')
@@ -219,5 +224,5 @@ def test():
         return render_template('psychometric_result.html', result=decision(result))
     form=TestForm()
     return render_template('psychometric_test.html',form=form)
-# if __name__ == "__main__":
-#     app.run(debug=False)
+if __name__ == "__main__":
+    app.run(debug=False)
